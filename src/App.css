@@ -1,38 +1,63 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h1 {
   text-align: center;
+  color: #4a90e2;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #28a745;
   color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.delete {
+  background-color: #dc3545;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
 }
